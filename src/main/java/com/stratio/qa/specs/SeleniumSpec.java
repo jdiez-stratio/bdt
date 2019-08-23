@@ -290,7 +290,7 @@ public class SeleniumSpec extends BaseGSpec {
 
     /**
      * Clear the text on a numbered {@code index} previously found element.
-     * Use this function if you are having problems with seleniumClear
+     * Use this function if you are having problems with seleniumClear.
      * @param index
      */
     @When("^I clear the content on text input using keyboard at index '(\\d+)'$")
