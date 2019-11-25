@@ -1129,6 +1129,7 @@ public class CommonG {
         Realm realm = null;
         String govTenant = System.getProperty("GOV_TENANT") != null ? System.getProperty("GOV_TENANT") : "NONE";
         String govRolesID = System.getProperty("GOV_ROLESID");
+        String govUserID = System.getProperty("GOV_USERID") != null ? System.getProperty("GOV_USERID") : "admin";
         if (this.getRestHost() == null) {
             throw new Exception("Rest host has not been set");
         }
@@ -1167,7 +1168,7 @@ public class CommonG {
                     request = request.setHeader("Accept", "application/json");
                     request = request.setHeader("X-TenantID", govTenant);
                     request = request.setHeader("X-RolesID", govRolesID);
-                    request = request.setHeader("X-UserID", "admin");
+                    request = request.setHeader("X-UserID", govUserID);
                 }
 
                 if (this.getResponse() != null) {
