@@ -8,6 +8,7 @@ Only listing significant user-visible, not internal code cleanups and minor bug 
 * [PIT-457] Step to make CCT installations independent from CCT version
 * [PIT-458] Step to make CCT uninstallations independent from CCT version
 * [QATM-3183] Try/catch added in @dcos to avoid errors if container is wrong
+* [QATM-3222] Add local variable for governance cookie in setGoSecSSOCookie
 
 ## 0.14.0 (March 09, 2020)
 
